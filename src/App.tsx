@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1 className="flex justify-center mt-20 font-extrabold text-4xl">
+      <h1 className="mt-20 flex justify-center text-4xl font-extrabold">
         Custom React Template
       </h1>
     </>
