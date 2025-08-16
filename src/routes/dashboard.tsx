@@ -1,5 +1,7 @@
 // routes/dashboard.tsx
 import { createFileRoute, redirect } from "@tanstack/react-router";
+import Header from "../components/header";
+import DashboardLayout from "../components/dashboardLayout";
 
 export const Route = createFileRoute("/dashboard")({
   beforeLoad: ({ context }) => {
@@ -11,11 +13,10 @@ export const Route = createFileRoute("/dashboard")({
 });
 
 function Dashboard() {
-  const { user } = Route.useRouteContext().auth;
   return (
-    <div className="p-10">
-      <h1 className="text-2xl font-bold">Welcome, {user?.name} 🎉</h1>
-      <p>You are now logged into your dashboard.</p>
+    <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50">
+      <Header />
+      <DashboardLayout />
     </div>
   );
 }

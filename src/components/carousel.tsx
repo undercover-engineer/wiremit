@@ -50,16 +50,15 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="px-4 sm:px-12 md:px-24">
+    <div className="h-full md:pt-32">
       <Slider {...settings}>
         {ADS.map((ad) => (
-          <div key={ad.id} className="min-w-0 flex-[0_0_100%]">
-            <article className="relative h-[320px] sm:h-[380px] md:h-[420px] mx-4 sm:mx-8 md:mx-12 rounded-2xl overflow-hidden">
+          <div key={ad.id} className="h-full">
+            <article className="relative h-full flex items-center rounded-2xl overflow-hidden">
               <img
                 src={ad.img}
                 alt={ad.headline}
                 className="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/40" />
               <div className="relative z-10 flex h-full items-center p-6 md:p-10">
