@@ -29,11 +29,7 @@ export default function HeroSection() {
             <div className="flex gap-4">
               <button className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
                 <span>
-                  <img
-                    src="/public/apple.svg"
-                    alt="App Store Logo"
-                    className="h-8"
-                  />
+                  <img src="/apple.svg" alt="App Store Logo" className="h-8" />
                 </span>
                 <div className="text-left">
                   <div className="text-xs">Download on the</div>
@@ -43,7 +39,7 @@ export default function HeroSection() {
               <button className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
                 <span>
                   <img
-                    src="/public/playstore.svg"
+                    src="/playstore.svg"
                     alt="Google PlayStore Logo"
                     className="h-6"
                   />
@@ -70,7 +66,7 @@ export default function HeroSection() {
           {/* Right Content - Image with Overlays */}
           <div className="relative">
             <img
-              src="/public/heroImage.png"
+              src="/heroImage.png"
               alt="Happy man using Monks Pay"
               className="w-full h-auto rounded-2xl"
             />

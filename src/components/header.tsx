@@ -8,20 +8,18 @@ export default function Header() {
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div>
-          <img
-            src="/public/wiremit-logo.svg"
-            alt="Wiremit Logo"
-            className="h-8"
-          />
+          <a href="/">
+            <img src="/wiremit-logo.svg" alt="Wiremit Logo" className="h-8" />
+          </a>
         </div>
 
         {/* Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            Track A Transfer
+          <a href="/dashboard" className="text-gray-700 hover:text-gray-900">
+            Send Money
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-            Contact Us
+            Track A Transfer
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
             Help
@@ -44,18 +42,6 @@ export default function Header() {
               <button
                 onClick={() =>
                   loginWithRedirect({
-                    screen_hint: "signup", // tells Auth0 to open Sign Up tab
-                    appState: { returnTo: "/dashboard" }, // where to go after login/signup
-                  })
-                }
-                className="hover:underline"
-              >
-                Sign Up
-              </button>
-              <span> / </span>
-              <button
-                onClick={() =>
-                  loginWithRedirect({
                     appState: { returnTo: "/dashboard" },
                   })
                 }
@@ -67,7 +53,7 @@ export default function Header() {
           ) : (
             <div className="text-black flex item-center">
               <span className="mr-2">
-                <img src="/public/user.svg" alt="user avatar" className="h-6" />
+                <img src="/user.svg" alt="user avatar" className="h-6" />
               </span>
               <button
                 onClick={() =>

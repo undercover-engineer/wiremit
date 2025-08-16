@@ -17,7 +17,7 @@ export default function App() {
     useAuth0();
 
   if (isLoading) {
-    return <div className="p-10">Loading authentication...</div>;
+    return <div className="p-10">Loading dashboard...</div>;
   }
 
   return (
