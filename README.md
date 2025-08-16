@@ -1,15 +1,30 @@
-# React + TypeScript + Vite + Tailwind Template
+# ⚡️Wiremit Web App
 
-This template provides a minimal setup to get React working in Vite with Tailwind CSS, along with Prettier and ESLint for code formatting and linting.
+Wiremit is a web app built using React and TypeScript for Zimbabwean parents to send money to their children studying abroad (UK or South Africa). The app has account creation, login, which is implemented using Auth0 for secure authentication, and a dashboard which has the Send Money Form, Carousel implemented using the React slick package for displaying ads, and a paginated transaction list
 
-## Features
+## 🚀Features
 - React 19
 - Tailwind CSS version 4
 - Vite for fast development and build process
+- TanStack Router
+- Auth0
 - Prettier for code formatting
 - ESLint for code linting and quality checks
 
-## Requirements
+## 📁Project Structure
+```
+wiremit/
+├── public/ # Static assets
+├── src/ # Application source code
+├── .env # Environment variables
+├── index.html # HTML template
+├── package.json # Project metadata and scripts
+├── vite.config.ts # Vite configuration
+├── tsconfig*.json # TypeScript configuration
+└── README.md
+```
+
+## 🧰Requirements
 
 To run this project, you must have the following installed:
 - Node.js version 20 or higher
@@ -35,7 +50,7 @@ After the dependencies are installed, start the project with:
     ```
 This will start the development server, and you should be able to access the app at http://localhost:5173.
 
-## Code Formatting and Linting
+## ✨Code Formatting and Linting
 Prettier: This template is configured with Prettier to automatically format your code. You can format your code by running:
   ```bash
   npm run lint
@@ -51,6 +66,24 @@ If any issues arise, you can fix them using the following command
   npm run lint -- --fix
   ```
 
-## Final Notes
-Update Packages Regularly - Always check in on your project to ensure packages aren’t deprecated and that updates don’t break your project
-Remove the .git File When Cloning - This ensures that your changes to your new project don’t affect the template’s remote repo
+## 🔌 Integrations
+### 🔐 Auth0 – Authentication
+Wiremit is ready to integrate with Auth0, a secure identity platform supporting:
+
+- Email/password and social login (Google, GitHub, etc.)
+- Token-based authentication
+🔗 Get started with Auth0
+The .env in this project provides keys to access Auth0. They are left open for demo purposes only.
+
+## 🎠 React Slick – Carousel Slider
+For responsive sliders the project uses React Slick, a powerful  React wrapper for the Slick carousel.
+
+### Features:
+
+- Swipe/drag support
+- Autoplay, fade, infinite loop
+- Custom arrows, dots, and transitions
+🔗 React Slick Documentation
+
+## App Demo
+![demo](./demo.gif)
