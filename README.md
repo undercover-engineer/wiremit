@@ -86,4 +86,4 @@ For responsive sliders the project uses React Slick, a powerful  React wrapper f
 🔗 React Slick Documentation
 
 ## App Demo
-![demo](./demo.gif)
+![demo](https://github.com/undercover-engineer/wiremit/blob/master/public/demo.gif)
